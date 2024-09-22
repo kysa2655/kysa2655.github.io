@@ -2,43 +2,95 @@
 
 Errors Fixed in HTML Midterm
 
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
-16.
-17.
-18. 
-19.
-20. 
-21. 
-22.
-23.
-24.
-25.
-26.
-27.
-28.
-29.
-30.
-31.
-32.
-33.
-34.
-35.
-36.
-37.
-38.
-39.
-40.
+
+ATLS 2200 - 100 / ATLS 2200 - 110
+HTML Midterm
+Group: EMK
+Members:
+Eva Reish
+Madeline Mancini
+Kyle Saunders
+
+25 (html1)
+ Line 1: doc type is missing
+    Add <!DOCTYPE html>
+Line 4: close the head before starting the body
+    </head>
+ Line 4: there are two html opening tags
+    Get rid of the “<html language=’en’>” in line 5 and add “language=’en’” to the first html tag
+ Line 4: language is not correct
+    Change “language” to “lang”
+Line 9: does not close h1 
+    Add </h1>
+Line 11: does not open paragraph with <p>
+    Add <p>
+Line 19: begins with </li> instead of <li>
+    Correct <li>
+Line 24: starts as “ol” but ends as “ul”
+    Change “</ul>” to “</ol>”
+Line 26: does not close paragraph
+    Add </p>
+Line 28: “Image.png” is supposed to be different to fit file name
+    Change to “image.jpg”
+Line 30: a tag is not closed
+    Close with </a> before </img>
+Line 30: remove unneeded img tag
+    Delete </img>
+Line 32: table does not close
+    Close table on line 45 with </table>
+ Line 38: No closed td tag
+    Change <td> to </td> for the entry 25
+Line 46: image reference is to jpeg but needs to be jpg
+    Remove jpeg and change to jpg
+Line 46: img source needs to be changed
+    Change “source” to “src”
+Line 48: strikethrough needed
+    Added <s></s>
+Line 50: background color code is wrong
+    Delete bgcolor=”lightgray” and change to style=”background-color: lightgray:”
+Line 54: does not close comment
+    Add —> 
+Line 56: a tag is not closed
+    Close with </a> 
+Line 58: emphasis needs to be put inside of <p></p>
+    Move </em>
+Line 58: emphasis needs to be changed to <u></u> instead of <em>
+    Change <em></em> to <u></u>
+Line 61: “<dl>” is a different type of list that uses “<dt>” and “<dd>” as list item tags
+    Change <li> to <dt>
+Line 62: same as line 61
+    Change <li> to <dd>
+Line 64: opens as h2 but closes as h3
+    Change h3 to h2 and close it
+
+15 (html 2)
+Line 2: Incorrect order, html lang comes after DOCTYPE
+    Add <html lang=”en”>	
+Line 4: Header type should be outside the head tag
+    Move entire 4th line to inside the body and inside div
+Line 5: Missing closing head tag
+    Add </head> 
+Line 5: body tag needs to be closed 
+    Change <body to <body>
+Line 6: remove <html> since adding the  <html lang=”en”>	is proper formatting
+    Remove <html> 
+Line 8: Paragraph is never properly closed
+    Add </p> to end of the line 
+Line 8: Missing strong closing tag
+    Add </strong> after important 
+Line 10: Wrong image source, should be src instead of href
+    Change href to src
+Line 10: Image is missing an _ to open proper image
+    Change image 2.jpg to image_2.jpg
+Line 12: Heading needs an opening line 
+    Add <h2> in front of This 
+    Line 14: Text needs an opening tag
+Add <p> in front of Text
+    Line 15: Need comment text 
+Add <!-- → around comment 
+    Line 15: add divide after comment on new line  
+    Add </div>
+Line 17: Add closing body tag
+    Add </body>
+Line 16: Incorrect spelling of html
+    Change <htm> to </html>
