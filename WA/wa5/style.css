@@ -1,0 +1,110 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+    margin: 0;
+}
+  
+  html {
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+    font-size: 10px;
+    background-color: #ccc;
+  }
+  
+  /* General Page Styles*/
+  
+  /* Selectors to be matched up with rulesets */
+  
+  /*.card article img
+  .card footer
+  .card header
+  .card*/
+  
+  /* Rulesets to be matched up with selectors */
+ 
+  /*{
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    }
+  
+   {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+    }
+  
+  {
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+  }
+  
+  {
+    max-height: 100%;
+    float: right;
+  }*/
+
+  /* Card Container*/
+
+  .card{
+    width: 35em;
+    height: 22em;
+    margin: 5em auto;
+    background-color: red;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+  }
+  
+  /* Header and Footer Styles*/
+
+  .card header{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+    border-radius: 1.5em 1.5em 0 0;
+    margin: 0;
+  }
+
+  .card footer{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+    border-radius: 0 0 1.5em 1.5em;
+    margin: 0;
+  }
+
+  /* Main Business Card Contents */
+
+  .card article img{
+    max-height: 100%;
+    float: right;
+  }
+
+  /*editing article to fit standards*/
+  article {
+    height: 11.25em;
+    background-color: rgba(0,0,0,0.2);
+    line-height: 1.5;
+    font-size:.9375em;
+    vertical-align: middle;
+  }
+
+  /* setting h2 details*/
+  h2 {
+    font-size: 1.875em;
+    line-height: 2;
+    color: black;
+    margin: 0;
+  }
+
+  /* setting parameters for <p> in footer */
+  .card footer p {
+    font-size:1.5em;
+    line-height: 1.5;
+    margin:0;
+    color: black;
+    vertical-align:bottom;
+  }
+
+  /* setting parameters for <p> in article */
+  article p {
+    padding-left:1.1em;
+    color: white;
+  }
