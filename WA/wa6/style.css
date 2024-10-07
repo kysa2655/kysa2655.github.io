@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    background-image: url("sport.jpg");
+    background-size: 100vw, 100vh;
+    font-family: 'Helvetica neue', Arial, 'sans serif';
+}
+
+h3 {
+    font-size: 10;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.scorecard {
+    display: flex;
+    padding: .1em;
+    width: 20em;
+    height: 3em;
+    margin: 2.5em 0 0 0;
+    text-align: center;
+    border: .1em solid white;
+    border-radius: 1em;
+    border-bottom: none;
+    background: linear-gradient(to right, #A2A4A3, #565A5C, #CFB87C);
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 1));
+}
+
+.left{                                  /* left score */
+    flex: 1;
+    width: 25%;
+    align-items: center;
+    border-radius: 1em;
+    color: white;
+}
+
+.right{                                 /*right score*/
+    flex: 1;
+    width: 25%;
+    align-items: center;
+    border-radius: 1em;
+    color: white;
+}
+
+.middle {                               /*middle scorecard*/
+    flex: 1;
+    width:50%;
+    height:100%;
+    align-items: center;
+    border-radius: 1em;
+    color: white;
+}
+
+.quarter-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 0 3em;
+    width: 10em;
+    height: .5em;
+    background: linear-gradient(to bottom, #A2A4A3, #CFB87C);
+    border: .1em solid white;
+    border-radius: 0 0 1em 1em; /* Only round bottom corners */
+    border-top: none;
+    color: white;
+    text-align: center;
+}
+
+.left, .middle, .right {
+    flex: 1;
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+    height: 100%;
+    background: none;
+}
+
+
+.info-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50em;
+    height: 5em;
+    border: .2em solid black;
+    margin-top: auto;
+    margin-bottom: 5em;
+    padding: 1em;
+    background: white;
+    border-radius: .5em;
+    color: black;
+    position: relative;
+    background-image: url("cu-logo.png"); 
+    background-repeat: no-repeat; 
+    background-size: 3em; 
+    background-position: 10px center; 
+    padding-left: 10em;
+    padding-right: 5em;
+    text-align: right;
+}
+
+.info-card h2{
+    text-align: center;
+    margin: 0;
+    padding-left: 2em;
+}
