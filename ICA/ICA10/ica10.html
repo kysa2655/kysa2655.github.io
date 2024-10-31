@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ica10.js"></script>
+    <link rel="stylesheet" href="ica10.css">
+    <title>ICA10</title>
+</head>
+<body>
+
+    <!-- slideshow images -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="numbertext"><strong>1 / 4</strong></div>
+        <img src="pic1.jpg" style="width:100%" alt="black and white concert photo">
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext"><strong>2 / 4</strong></div>
+        <img src="pic2.jpg" style="width:100%" alt="two men playing video games in a van">
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext"><strong>3 / 4</strong></div>
+        <img src="pic3.jpg" style="width:100%" alt="man alone on stage with guitar looking out over crowd at sunset">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"><strong>4 / 4</strong></div>
+            <img src="pic4.jpg" style="width:100%" alt="three people leaving from tour van backstage">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- dots for current slide -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+
+    </div>
+
+    <!-- image switch button -->
+    <div style="text-align:center; margin-top: 20px;">
+        <button class="button" onclick="switchImages()"><strong>switch images</strong></button>
+    </div>
+
+</body>
+</html>
