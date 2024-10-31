@@ -39,8 +39,9 @@ function showSlides(n) {
 
 // to change between image sets - for button
 function switchImages() {
-    // toggles image set
+    // toggles image set and alt text set
     currentImageSet = (currentImageSet === 1) ? 2 : 1;
+    currentAltTextSet = (currentAltTextSet === 1) ? 2 : 1;
     
     // select new image set from toggle
     const newImageSet = (currentImageSet === 1) ? imageSet1 : imageSet2;
