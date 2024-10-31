@@ -41,16 +41,16 @@ function showSlides(n) {
 function switchImages() {
     // toggles image set and alt text set
     currentImageSet = (currentImageSet === 1) ? 2 : 1;
-    currentAltTextSet = (currentAltTextSet === 1) ? 2 : 1;
     
     // select new image set from toggle
     const newImageSet = (currentImageSet === 1) ? imageSet1 : imageSet2;
-    const newAltTextSet = (currentImageSet === 1) ? altTextSet1 : altTextSet2;
+    const newAltTextSet = (currentAltTextSet === 1) ? altTextSet1 : altTextSet2;
 
     // update all 'src' for images in set
     const slides = document.querySelectorAll(".mySlides img");
     for (let i = 0; i < slides.length; i++) {
         slides[i].src = newImageSet[i];
+        slides[i].alt = newAltTextSet[i];
     }
 
     // resets to first slide
