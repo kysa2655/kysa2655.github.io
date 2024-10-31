@@ -44,7 +44,7 @@ function switchImages() {
     
     // select new image set from toggle
     const newImageSet = (currentImageSet === 1) ? imageSet1 : imageSet2;
-    const newAltTextSet = (currentAltTextSet === 1) ? altTextSet1 : altTextSet2;
+    const newAltTextSet = (currentImageSet === 1) ? altTextSet1 : altTextSet2;
 
     // update all 'src' for images in set
     const slides = document.querySelectorAll(".mySlides img");
