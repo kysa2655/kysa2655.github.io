@@ -1,0 +1,12 @@
+/* this is our index.css page for styles that will be applied to the whole website*/
+
+body {
+    background-color: #262626;
+    color: #F2AC29;
+    margin: 50px;
+
+    font-family: geologica-variable, sans-serif;
+    font-style: normal;
+    font-variation-settings: "CRSV" 0, "SHRP" 0, "slnt" 0, "wght" 100;
+}
+

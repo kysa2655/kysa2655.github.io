@@ -1,0 +1,34 @@
+/* this is our index.css page for styles that will be applied to the whole website*/
+
+body {
+    background-color: #262626;
+    color: #F2AC29;
+    margin: 0;
+
+    font-family: geologica-variable, sans-serif;
+    font-style: normal;
+    font-variation-settings: "CRSV" 0, "SHRP" 0, "slnt" 0, "wght" 100;
+        
+  }
+  nav {
+    background-color: #F2AC29;
+    padding: .5em;
+    position: sticky;
+    top: 0;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ 
+  nav li {
+    color: #262626;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
