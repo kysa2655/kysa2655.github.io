@@ -1,7 +1,7 @@
 let slideIndex = 1;
-let currentImageSet = 1; // which set is currently displayed
+let currentImageSet = 1;
 
-// the two image sets
+// Define two sets of image sources
 const imageSet1 = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg"];
 const imageSet2 = ["newpic1.jpg", "newpic2.jpg", "newpic3.jpg", "newpic4.jpg"];
 
@@ -11,17 +11,17 @@ const altTextSet2 = ["artist holding guitar up to ear backstage", "three musicia
 
 showSlides(slideIndex);
 
-// control next and previous
+// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// "thumbnail" image stuff
+// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-// to actually show slides
+// Function to display slides
 function showSlides(n) {
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -37,23 +37,23 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
-// to change between image sets - for button
+// Switch between image sets
 function switchImages() {
-    // toggles image set and alt text set
+    // Toggle the image set
     currentImageSet = (currentImageSet === 1) ? 2 : 1;
     
-    // select new image set from toggle
+    // Select the new image set and alt text set based on the toggle
     const newImageSet = (currentImageSet === 1) ? imageSet1 : imageSet2;
     const newAltTextSet = (currentImageSet === 1) ? altTextSet1 : altTextSet2;
 
-    // update all 'src' for images in set
+    // Update the `src` and `alt` attributes of each slide image
     const slides = document.querySelectorAll(".mySlides img");
     for (let i = 0; i < slides.length; i++) {
         slides[i].src = newImageSet[i];
         slides[i].alt = newAltTextSet[i];
     }
 
-    // resets to first slide
+    // Reset to the first slide
     slideIndex = 1;
     showSlides(slideIndex);
 }
