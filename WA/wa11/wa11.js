@@ -9,11 +9,11 @@ const imageFilenames = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jp
 
 // Step 2: Declare the alternative text for each image file
 const altText = [
-  'Image 1 description',
-  'Image 2 description',
-  'Image 3 description',
-  'Image 4 description',
-  'Image 5 description'
+  'Man by car in fall forest',
+  'Concert from in crowd view with hands up and shining lights',
+  'Artistic blurry photo of man playing guitar at concert',
+  'Two men and dog at sunset in fall forest',
+  'Man playing guitar at concert passionately'
 ];
 
 // Step 3: Looping through images
