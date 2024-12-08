@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB; 
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.score {
+    position: absolute;
+    top: 32px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    z-index: 10;
+}
+
+.bird {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: 200px;
+    left: 50px;
+}
+
+.pipe {
+    position: absolute;
+    width: 60px;
+    background-color: green;
+    right: -60px; 
+}
+
+.top-pipe {
+    top: 0;
+}
+
+.bottom-pipe {
+    bottom: 0;
+}
+
+#popup-message-container {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#popup-button-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+#start-button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.game-controls-container {
+    margin-top: 15px; 
+    width: 400px;
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.8); 
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#high-score-container {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+#reset-level-one-button {
+    margin-top: 15px; 
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.level {
+    position: absolute;
+    top: 5px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    z-index: 10;
+  }
